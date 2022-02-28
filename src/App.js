@@ -1,5 +1,7 @@
+// src/App.js
 import "./App.css";
-import Tweet from "./components/Tweet";
+
+import Tweet from "./components/Tweet"
 
 const tweetsArray = [
   {
@@ -34,12 +36,16 @@ const tweetsArray = [
   },
 ];
 
+
 function App() {
   return (
-    <div className="App">
-      <Tweet />
+  <div className="App">
+    <div>
+      <Tweet tweet={tweetsArray[0]} />
+      <Tweet tweet={tweetsArray[1]} />
+      <Tweet tweet={tweetsArray[2]} />
     </div>
+  </div>
   );
 }
-
 export default App;
